@@ -5,39 +5,39 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
-const emitter = require("tiny-emitter/instance");
-const { remote } = require("electron");
+const emitter = require('tiny-emitter/instance');
+const { remote } = require('electron');
 const { BrowserWindow, dialog } = remote;
 
 const debugWindow = BrowserWindow.getAllWindows()[0];
 
 export default defineComponent({
-  name: "drop-area",
+  name: 'drop-area',
   data() {
     return {
-      dropText: "Select or drop .so file here"
+      dropText: 'Select or drop .so file here'
     };
   },
   methods: {
     selectDLL() {
       dialog
         .showOpenDialog(remote.getCurrentWindow(), {
-          title: "Select .so file",
+          title: 'Select .so file',
           filters: [
             {
-              name: "*.so",
-              extensions: ["so"]
+              name: '*.so',
+              extensions: ['so']
             }
           ]
         })
         .then((path: { canceled: boolean; filePaths: string[] }) => {
           if (path.canceled) {
             if (debugWindow) {
-              debugWindow.webContents.send("debug data", {
-                type: "warn",
-                message: "User canceled select shared object file path"
+              debugWindow.webContents.send('debug data', {
+                type: 'warn',
+                message: 'User canceled select shared object file path'
               });
             }
 
@@ -45,19 +45,19 @@ export default defineComponent({
           }
 
           this.dropText = path.filePaths[0];
-          emitter.emit("path", path.filePaths[0]);
+          emitter.emit('path', path.filePaths[0]);
 
           if (debugWindow) {
-            debugWindow.webContents.send("debug data", {
-              type: "success",
+            debugWindow.webContents.send('debug data', {
+              type: 'success',
               message: `Got shared object file path - ${path.filePaths[0]}`
             });
           }
         })
         .catch((error: Error) => {
           if (debugWindow) {
-            debugWindow.webContents.send("debug data", {
-              type: "error",
+            debugWindow.webContents.send('debug data', {
+              type: 'error',
               message: `Can't get shared object path! ${error}`
             });
           }
@@ -65,13 +65,13 @@ export default defineComponent({
     }
   },
   mounted() {
-    document.addEventListener("dragover", event => event.preventDefault());
+    document.addEventListener('dragover', event => event.preventDefault());
 
-    document.addEventListener("drop", event => {
+    document.addEventListener('drop', event => {
       event.preventDefault();
 
       this.dropText = event.dataTransfer!.files[0].path;
-      emitter.emit("path", event.dataTransfer!.files[0].path);
+      emitter.emit('path', event.dataTransfer!.files[0].path);
     });
   }
 });

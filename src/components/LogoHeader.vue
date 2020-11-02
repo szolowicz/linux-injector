@@ -1,7 +1,7 @@
 <template>
   <div class="sign">
-    <span class="fast-flicker">linux-</span>inj<span class="flicker">ec</span
-    >tor
+    <span class="fast-flicker">linux-</span>inj<span class="flicker">ec</span>
+    tor
   </div>
 </template>
 

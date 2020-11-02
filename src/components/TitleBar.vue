@@ -31,13 +31,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
-const { remote } = require("electron");
+const { remote } = require('electron');
 const { BrowserWindow } = remote;
 
 export default defineComponent({
-  name: "title-bar",
+  name: 'title-bar',
   methods: {
     close() {
       BrowserWindow.getFocusedWindow().close();

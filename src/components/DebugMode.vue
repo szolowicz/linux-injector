@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-const { remote } = require("electron");
+const { remote } = require('electron');
 const { BrowserWindow } = remote;
 
 const debugWindow = BrowserWindow.getAllWindows()[0];
 
 export default {
-  name: "debug-mode",
+  name: 'debug-mode',
   methods: {
     displayDebug() {
       debugWindow.show();

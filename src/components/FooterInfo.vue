@@ -6,14 +6,14 @@
 </template>
 
 <script lang="ts">
-const { shell } = require("electron");
+const { shell } = require('electron');
 
 export default {
-  name: "footer-info",
+  name: 'footer-info',
   mounted() {
-    document.addEventListener("click", event => {
+    document.addEventListener('click', event => {
       const target = event.target as any;
-      if (target.tagName === "A" && target.href.startsWith("http")) {
+      if (target.tagName === 'A' && target.href.startsWith('http')) {
         event.preventDefault();
         shell.openExternal(target.href);
       }
