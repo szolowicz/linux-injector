@@ -6,10 +6,10 @@
 * {
   user-select: none;
   box-sizing: border-box;
-}
 
-*:focus {
-  outline: none !important;
+  &:focus {
+    outline: none !important;
+  }
 }
 
 button {

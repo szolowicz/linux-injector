@@ -68,6 +68,7 @@ body.debug {
 .debug {
   color: Snow;
 }
+
 .success {
   color: LawnGreen;
 }
@@ -89,30 +90,36 @@ body.debug {
   margin: 30px auto;
   padding-left: 20px;
   padding-top: 20px;
-}
 
-#console::-webkit-scrollbar {
-  width: 6px;
-  height: 3px;
-}
-#console::-webkit-scrollbar-button {
-  background-color: transparent;
-}
-#console::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-#console::-webkit-scrollbar-track-piece {
-  background-color: transparent;
-}
-#console::-webkit-scrollbar-thumb {
-  height: 50px;
-  background-color: #333;
-  border-radius: 3px;
-}
-#console::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
-#console::-webkit-resizer {
-  background-color: transparent;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+
+    &-button {
+      background-color: transparent;
+    }
+
+    &-track {
+      background-color: transparent;
+
+      &-piece {
+        background-color: transparent;
+      }
+    }
+
+    &-thumb {
+      height: 50px;
+      background-color: #333;
+      border-radius: 3px;
+    }
+
+    &-corner {
+      background-color: transparent;
+    }
+  }
+
+  &::-webkit-resizer {
+    background-color: transparent;
+  }
 }
 </style>

@@ -17,18 +17,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
-import TitleBar from "@/components/TitleBar.vue";
-import DropArea from "@/components/DropArea.vue";
-import ProcessSelect from "@/components/ProcessSelect.vue";
-import InjectButton from "@/components/InjectButton.vue";
-import FooterInfo from "@/components/FooterInfo.vue";
-import LogoHeader from "@/components/LogoHeader.vue";
-import DebugMode from "@/components/DebugMode.vue";
+import TitleBar from '@/components/TitleBar.vue';
+import DropArea from '@/components/DropArea.vue';
+import ProcessSelect from '@/components/ProcessSelect.vue';
+import InjectButton from '@/components/InjectButton.vue';
+import FooterInfo from '@/components/FooterInfo.vue';
+import LogoHeader from '@/components/LogoHeader.vue';
+import DebugMode from '@/components/DebugMode.vue';
 
 export default defineComponent({
-  name: "inject-button",
+  name: 'inject-button',
   components: {
     TitleBar,
     DropArea,
@@ -59,9 +59,6 @@ $background: #0b0c1b;
   font-family: Circular, Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-}
-
-#app {
   justify-content: center;
   align-items: center;
   flex-direction: column;
