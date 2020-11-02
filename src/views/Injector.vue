@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <TitleBar />
+    <title-bar />
 
-    <LogoHeader />
+    <logo-header />
 
-    <ProcessSelect />
+    <process-select />
 
-    <DropArea />
+    <drop-area />
 
-    <InjectButton />
+    <inject-button />
 
-    <FooterInfo />
+    <footer-info />
 
-    <DebugMode />
+    <debug-mode />
   </div>
 </template>
 
@@ -28,7 +28,7 @@ import LogoHeader from '@/components/LogoHeader.vue';
 import DebugMode from '@/components/DebugMode.vue';
 
 export default defineComponent({
-  name: 'inject-button',
+  name: 'injector-window',
   components: {
     TitleBar,
     DropArea,

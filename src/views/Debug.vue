@@ -1,6 +1,6 @@
 <template>
   <div id="debug-window">
-    <TitleBar />
+    <title-bar />
 
     <div id="logo-wrap">
       <p>Debug mode</p>
@@ -22,7 +22,7 @@ import TitleBar from '@/components/TitleBar.vue';
 const { ipcRenderer } = require('electron');
 
 export default defineComponent({
-  name: 'debug-console',
+  name: 'debug-window',
   components: {
     TitleBar
   },

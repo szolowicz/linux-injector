@@ -5,6 +5,14 @@
   </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'logo-header'
+});
+</script>
+
 <style lang="scss" scoped>
 @font-face {
   font-family: 'againts';

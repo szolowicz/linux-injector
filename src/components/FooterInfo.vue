@@ -11,7 +11,7 @@ const { shell } = require('electron');
 export default {
   name: 'footer-info',
   mounted() {
-    document.addEventListener('click', event => {
+    document.addEventListener('click', (event: Event) => {
       const target = event.target as any;
       if (target.tagName === 'A' && target.href.startsWith('http')) {
         event.preventDefault();

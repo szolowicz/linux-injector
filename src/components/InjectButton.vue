@@ -16,6 +16,7 @@ const { BrowserWindow } = remote;
 const debugWindow = BrowserWindow.getAllWindows()[0];
 
 export default defineComponent({
+  name: 'inject-button',
   data() {
     return {
       process: '' as string,
