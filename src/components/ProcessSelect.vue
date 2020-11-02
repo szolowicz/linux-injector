@@ -1,6 +1,6 @@
 <template>
   <div class="processes-wrapper">
-    <select id="process-list" v-model="selected">
+    <select class="process-list" v-model="selected">
       <option v-for="(process, index) in processes" :key="index">
         {{ process.name }}
       </option>
@@ -90,7 +90,7 @@ export default defineComponent({
   margin-top: 22%;
 }
 
-#process-list {
+.process-list {
   display: block;
   font-weight: 500;
   background-color: #3b3c4a;

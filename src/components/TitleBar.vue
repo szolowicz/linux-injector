@@ -1,5 +1,5 @@
 <template>
-  <div id="title-bar">
+  <div class="title-bar">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="54"
@@ -50,7 +50,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-#title-bar {
+.title-bar {
   -webkit-app-region: drag;
   position: fixed;
   top: 7px;

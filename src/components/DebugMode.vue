@@ -1,5 +1,5 @@
 <template>
-  <div id="debug-mode" @click="displayDebug">
+  <div class="debug-mode" @click="displayDebug">
     Debug mode
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#debug-mode {
+.debug-mode {
   position: absolute;
   right: 15px;
   bottom: 15px;

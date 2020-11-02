@@ -1,5 +1,5 @@
 <template>
-  <button @click="inject" id="inject" :disabled="!process || !path">
+  <button @click="inject" class="inject-btn" :disabled="!process || !path">
     Inject
   </button>
 </template>
@@ -60,7 +60,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-#inject {
+.inject-btn {
   border: none;
   padding: 0 30px;
   will-change: opacity, color;

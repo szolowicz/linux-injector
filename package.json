@@ -1,6 +1,6 @@
 {
   "name": "linux-injector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lumm1t",
   "description": "Shared object injector made with Electron, Vue, TypeScript and Shell script.",
   "license": "MIT",
