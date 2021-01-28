@@ -15,8 +15,8 @@ export default {
   methods: {
     displayDebug() {
       debugWindow.show();
-    }
-  }
+    },
+  },
 };
 </script>
 

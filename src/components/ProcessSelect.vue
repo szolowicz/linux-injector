@@ -33,23 +33,23 @@ export default defineComponent({
         if (debugWindow) {
           debugWindow.webContents.send('debug data', {
             type: 'success',
-            message: 'Got all processes list'
+            message: 'Got all processes list',
           });
         }
       } catch (error) {
         if (debugWindow) {
           debugWindow.webContents.send('debug data', {
             type: 'error',
-            message: `Can't get processes list! ${error}`
+            message: `Can't get processes list! ${error}`,
           });
         }
       }
-    }
+    },
   },
   data() {
     return {
       selected: '' as string,
-      processes: [] as string[]
+      processes: [] as string[],
     };
   },
   mounted() {
@@ -64,21 +64,21 @@ export default defineComponent({
           if (debugWindow && value) {
             debugWindow.webContents.send('debug data', {
               type: 'success',
-              message: `Got ${value} process ID`
+              message: `Got ${value} process ID`,
             });
           }
         } catch (error) {
           if (debugWindow) {
             debugWindow.webContents.send('debug data', {
               type: 'error',
-              message: `Can't get process ID! ${error}`
+              message: `Can't get process ID! ${error}`,
             });
           }
         }
       },
-      deep: true
-    }
-  }
+      deep: true,
+    },
+  },
 });
 </script>
 

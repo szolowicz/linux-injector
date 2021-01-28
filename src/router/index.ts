@@ -2,7 +2,7 @@ import {
   createRouter,
   createWebHistory,
   createWebHashHistory,
-  RouteRecordRaw
+  RouteRecordRaw,
 } from 'vue-router';
 
 import Injector from '../views/Injector.vue';
@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'linux-injector',
-    component: Injector
+    component: Injector,
   },
   {
     path: '/debug',
@@ -20,19 +20,19 @@ const routes: Array<RouteRecordRaw> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Debug.vue')
+      import(/* webpackChunkName: "about" */ '../views/Debug.vue'),
   },
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/'
-  }
+    redirect: '/',
+  },
 ];
 
 const router = createRouter({
   history: process.env.IS_ELECTRON
     ? createWebHashHistory()
     : createWebHistory(),
-  routes
+  routes,
 });
 
 export default router;

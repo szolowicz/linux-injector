@@ -20,7 +20,7 @@ export default defineComponent({
   data() {
     return {
       process: '' as string,
-      path: '' as string
+      path: '' as string,
     };
   },
   mounted() {
@@ -34,7 +34,7 @@ export default defineComponent({
           './public/inject.sh',
           [`${this.process}`, `${this.path}`],
           {
-            bash: true
+            bash: true,
           }
         );
 
@@ -42,7 +42,7 @@ export default defineComponent({
           if (debugWindow) {
             debugWindow.webContents.send('debug data', {
               type: 'success',
-              message: `Injected ${this.path} to ${this.process} successfully!`
+              message: `Injected ${this.path} to ${this.process} successfully!`,
             });
           }
         });
@@ -50,12 +50,12 @@ export default defineComponent({
         if (debugWindow) {
           debugWindow.webContents.send('debug data', {
             type: 'error',
-            message: `Can't inject ${this.path} to ${this.process}! ${error}`
+            message: `Can't inject ${this.path} to ${this.process}! ${error}`,
           });
         }
       }
-    }
-  }
+    },
+  },
 });
 </script>
 

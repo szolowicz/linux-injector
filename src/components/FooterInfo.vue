@@ -18,7 +18,7 @@ export default {
         shell.openExternal(target.href);
       }
     });
-  }
+  },
 };
 </script>
 

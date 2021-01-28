@@ -36,8 +36,8 @@ export default defineComponent({
     InjectButton,
     FooterInfo,
     LogoHeader,
-    DebugMode
-  }
+    DebugMode,
+  },
 });
 </script>
 

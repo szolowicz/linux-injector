@@ -17,7 +17,7 @@ export default defineComponent({
   name: 'drop-area',
   data() {
     return {
-      dropText: 'Select or drop .so file here'
+      dropText: 'Select or drop .so file here',
     };
   },
   methods: {
@@ -28,16 +28,16 @@ export default defineComponent({
           filters: [
             {
               name: '*.so',
-              extensions: ['so']
-            }
-          ]
+              extensions: ['so'],
+            },
+          ],
         })
         .then((path: { canceled: boolean; filePaths: string[] }) => {
           if (path.canceled) {
             if (debugWindow) {
               debugWindow.webContents.send('debug data', {
                 type: 'warn',
-                message: 'User canceled select shared object file path'
+                message: 'User canceled select shared object file path',
               });
             }
 
@@ -50,7 +50,7 @@ export default defineComponent({
           if (debugWindow) {
             debugWindow.webContents.send('debug data', {
               type: 'success',
-              message: `Got shared object file path - ${path.filePaths[0]}`
+              message: `Got shared object file path - ${path.filePaths[0]}`,
             });
           }
         })
@@ -58,22 +58,22 @@ export default defineComponent({
           if (debugWindow) {
             debugWindow.webContents.send('debug data', {
               type: 'error',
-              message: `Can't get shared object path! ${error}`
+              message: `Can't get shared object path! ${error}`,
             });
           }
         });
-    }
+    },
   },
   mounted() {
-    document.addEventListener('dragover', event => event.preventDefault());
+    document.addEventListener('dragover', (event) => event.preventDefault());
 
-    document.addEventListener('drop', event => {
+    document.addEventListener('drop', (event) => {
       event.preventDefault();
 
       this.dropText = event.dataTransfer!.files[0].path;
       emitter.emit('path', event.dataTransfer!.files[0].path);
     });
-  }
+  },
 });
 </script>
 

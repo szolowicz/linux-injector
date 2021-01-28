@@ -13,7 +13,7 @@ if (process.platform !== 'linux') {
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
-  { scheme: 'app', privileges: { secure: true, standard: true } }
+  { scheme: 'app', privileges: { secure: true, standard: true } },
 ]);
 
 async function createWindow() {
@@ -29,8 +29,8 @@ async function createWindow() {
     icon: isDevelopment ? './public/favicon.png' : `${__dirname}/favicon.png`,
     webPreferences: {
       nodeIntegration: (process.env
-        .ELECTRON_NODE_INTEGRATION as unknown) as boolean
-    }
+        .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
+    },
   });
 
   // Create the debug window.
@@ -45,8 +45,8 @@ async function createWindow() {
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: (process.env
-        .ELECTRON_NODE_INTEGRATION as unknown) as boolean
-    }
+        .ELECTRON_NODE_INTEGRATION as unknown) as boolean,
+    },
   });
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {

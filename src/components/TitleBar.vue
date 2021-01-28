@@ -44,8 +44,8 @@ export default defineComponent({
     },
     minimize() {
       BrowserWindow.getFocusedWindow().minimize();
-    }
-  }
+    },
+  },
 });
 </script>
 

@@ -24,11 +24,11 @@ const { ipcRenderer } = require('electron');
 export default defineComponent({
   name: 'debug-window',
   components: {
-    TitleBar
+    TitleBar,
   },
   data() {
     return {
-      logs: [] as string[]
+      logs: [] as string[],
     };
   },
   mounted() {
@@ -39,7 +39,7 @@ export default defineComponent({
   beforeCreate() {
     document.title = 'linux-injector - Debug mode';
     document.body.className = 'debug';
-  }
+  },
 });
 </script>
 
