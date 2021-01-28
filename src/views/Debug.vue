@@ -66,19 +66,19 @@ body.debug {
 
 <style lang="scss" scoped>
 .debug {
-  color: Snow;
+  color: snow;
 }
 
 .success {
-  color: LawnGreen;
+  color: lawngreen;
 }
 
 .warn {
-  color: GoldenRod;
+  color: goldenrod;
 }
 
 .error {
-  color: LightCoral;
+  color: lightcoral;
 }
 
 #console {

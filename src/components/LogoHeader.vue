@@ -31,15 +31,13 @@ export default defineComponent({
     transparent
   );
   transform: translate(-50%, -50%);
-  letter-spacing: 2;
   left: 50%;
   top: 18%;
-  font-family: 'Clip';
   text-transform: uppercase;
   font-size: 4em;
   font-weight: 900;
   letter-spacing: 10px;
-  font-family: 'againts';
+  font-family: 'againts', Arial, sans-serif;
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
