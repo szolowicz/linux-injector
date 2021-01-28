@@ -9,9 +9,9 @@
     "dev": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
-    "lint:script": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{css,vue} --ignore-path .gitignore",
-    "lint": "yarn lint:script && yarn lint:style"
+    "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint",
