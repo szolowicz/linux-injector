@@ -57,7 +57,7 @@ export default defineComponent({
   },
   watch: {
     selected: {
-      handler: (value: string) => {
+      handler(value: string) {
         try {
           emitter.emit('process', value);
 
