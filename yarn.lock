@@ -1116,10 +1116,10 @@
     global-agent "^2.0.2"
     global-tunnel-ng "^2.7.1"
 
-"@electron/typescript-definitions@^8.9.2":
-  version "8.9.2"
-  resolved "https://registry.yarnpkg.com/@electron/typescript-definitions/-/typescript-definitions-8.9.2.tgz#a68d01cd76a87d3aa81baa4ba2641c9445118181"
-  integrity sha512-govyGHx1TUwwJvGVr/LT8QRMI4m/1cg/lEGObcIAhEcYTrPFDrDm3dUJmMOQKbaJuthY+WJcB8O5TFwoKIFMpQ==
+"@electron/typescript-definitions@^8.9.4":
+  version "8.9.4"
+  resolved "https://registry.yarnpkg.com/@electron/typescript-definitions/-/typescript-definitions-8.9.4.tgz#ec5c47aad3d45f2da2c40e22536720a9de64c2aa"
+  integrity sha512-KL3ohLe4D5lhJagBEj1Jpoh4BBiJMoCMlc6RSLPT+DaP0odgjEK+Ky6whRDW1cDDpgaSfMisdbN+CdOx3Y7JOg==
   dependencies:
     "@types/node" "^11.13.7"
     chalk "^2.4.2"
