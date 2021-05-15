@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.4",
     "@types/electron-devtools-installer": "^2.2.0",
     "@types/node": "^15.0.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
