@@ -33,7 +33,7 @@
     "vue-router": "^4.0.10"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@types/electron-devtools-installer": "^2.2.0",
     "@types/node": "^16.4.6",
