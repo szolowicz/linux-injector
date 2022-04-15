@@ -29,7 +29,7 @@
     "core-js": "^3.17.2",
     "ps-list": "^7.2.0",
     "tiny-emitter": "^2.1.0",
-    "vue": "^3.2.9",
+    "vue": "^3.2.33",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
