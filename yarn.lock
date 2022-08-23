@@ -1406,10 +1406,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
-"@types/node@*", "@types/node@^16.9.0":
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.9.0.tgz#d9512fe037472dcb58931ce19f837348db828a62"
-  integrity sha512-nmP+VR4oT0pJUPFbKE4SXj3Yb4Q/kz3M9dSAO1GGMebRKWHQxLfDNmU/yh3xxCJha3N60nQ/JwXWwOE/ZSEVag==
+"@types/node@*", "@types/node@^18.7.10":
+  version "18.7.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.10.tgz#f642dc9ded1bdd8c2cd847246466e71182b0fd67"
+  integrity sha512-SST7B//wF7xlGoLo1IEVB0cQ4e7BgXlDk5IaPgb5s0DlYLjb4if07h8+0zbQIvahfPNXs6e7zyT0EH1MqaS+5g==
 
 "@types/node@^11.13.7":
   version "11.15.35"
